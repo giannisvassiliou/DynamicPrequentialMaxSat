@@ -10,7 +10,7 @@ This repo contains **Numba-accelerated** Python implementations of the paper’s
 
 ---
 
-## TL;DR (What the paper argues)
+#What the paper argues
 
 In dynamic optimization, performance should be measured **online**: at each time step, evaluate on the incoming batch **before** adapting. This is **prequential evaluation** (test-then-train). :contentReference[oaicite:5]{index=5}
 
