@@ -10,9 +10,9 @@ This repo contains **Numba-accelerated** Python implementations of the paper’s
 
 ---
 
-#What the paper argues
+# What the paper argues
 
-In dynamic optimization, performance should be measured **online**: at each time step, evaluate on the incoming batch **before** adapting. This is **prequential evaluation** (test-then-train). :contentReference[oaicite:5]{index=5}
+In dynamic optimization, performance should be measured **online**: at each time step, evaluate on the incoming batch **before** adapting. This is **prequential evaluation** (test-then-train). 
 
 The paper shows:
 - A simple **population-based genetic algorithm** (“PGA” / GA best-of-pop) provides **implicit memory via population diversity** and delivers stronger immediate prequential performance than single-solution local search baselines (WalkSAT / ProbSAT). 
