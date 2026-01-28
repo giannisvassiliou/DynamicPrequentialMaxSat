@@ -1,12 +1,12 @@
 # Continuous MaxSAT under Prequential Evaluation (GECCO 2026)
 
-Reference paper: **“Continuous MaxSAT under Prequential Evaluation: A Population-Based Evolutionary Approach”**. :contentReference[oaicite:0]{index=0}
+Reference paper: **“Continuous MaxSAT under Prequential Evaluation: A Population-Based Evolutionary Approach”**
 
 This repo contains **Numba-accelerated** Python implementations of the paper’s prequential (test-then-train) streaming MaxSAT experiments, including:
-- Synthetic streaming MaxSAT benchmark :contentReference[oaicite:1]{index=1}
-- Real-world clause streams (HWMCC and Linux Kconfig) :contentReference[oaicite:2]{index=2}
-- Time-budgeted comparison (equalized per-batch wall-clock) :contentReference[oaicite:3]{index=3}
-- Replay memory study showing **catastrophic remembering** under adversarial drift :contentReference[oaicite:4]{index=4}
+- Synthetic streaming MaxSAT benchmark 
+- Real-world clause streams (HWMCC and Linux Kconfig) 
+- Time-budgeted comparison (equalized per-batch wall-clock)
+- Replay memory study showing **catastrophic remembering** under adversarial drift 
 
 ---
 
@@ -15,8 +15,8 @@ This repo contains **Numba-accelerated** Python implementations of the paper’s
 In dynamic optimization, performance should be measured **online**: at each time step, evaluate on the incoming batch **before** adapting. This is **prequential evaluation** (test-then-train). :contentReference[oaicite:5]{index=5}
 
 The paper shows:
-- A simple **population-based genetic algorithm** (“PGA” / GA best-of-pop) provides **implicit memory via population diversity** and delivers stronger immediate prequential performance than single-solution local search baselines (WalkSAT / ProbSAT). :contentReference[oaicite:6]{index=6}
-- Adding explicit replay memory can *harm* immediate performance under adversarial drift, a failure mode called **catastrophic remembering**. :contentReference[oaicite:7]{index=7}
+- A simple **population-based genetic algorithm** (“PGA” / GA best-of-pop) provides **implicit memory via population diversity** and delivers stronger immediate prequential performance than single-solution local search baselines (WalkSAT / ProbSAT). 
+- Adding explicit replay memory can *harm* immediate performance under adversarial drift, a failure mode called **catastrophic remembering**. 
 
 ---
 
