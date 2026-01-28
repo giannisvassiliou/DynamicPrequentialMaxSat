@@ -20,19 +20,25 @@ The paper shows:
 
 ---
 
-## Repository layout
+## Repository layout 
+
+# code folder
 
 - `synthetic.py`  
-  Main **synthetic streaming MaxSAT** experiment (concept drift + revisits). :contentReference[oaicite:8]{index=8}
+  Main **synthetic streaming MaxSAT** experiment (concept drift + revisits).
 
 - `synthetic_Memory_Replay.py`  
-  **Replay-memory / catastrophic remembering** experiment (includes GA+Mem variant). :contentReference[oaicite:9]{index=9}
+  **Replay-memory / catastrophic remembering** experiment (includes GA+Mem variant). 
 
 - `time_budget.py`  
-  **Time-budgeted** per-batch comparison (hard cutoff: 10/20/30 ms). :contentReference[oaicite:10]{index=10}
+  **Time-budgeted** per-batch comparison (hard cutoff: 10/20/30 ms).
 
 - `real_ds.py`  
-  **Real-world CNF stream** runner for directories of DIMACS `.cnf` files (HWMCC, Kconfig, or any CNF stream). :contentReference[oaicite:11]{index=11}
+  **Real-world CNF stream** runner for directories of DIMACS `.cnf` files (HWMCC, Kconfig, or any CNF stream). 
+# data folder
+ - 'linux_cnfs', 'cnfs' for the read_ds.py. REAL world datasets
+ - ablation about the synthetic experiment (99% win for GA vs WalkSat and others, in 5400 total cases)
+ - GA hyperparameters ablation
 
 ---
 
